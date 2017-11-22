@@ -11,6 +11,7 @@
 
 		//$where is an array of where, affectedFields is an array that represents updated fields
 		public function update ($id, $affectedFields) {
+			
 			return $this->db->update($this::DB_TABLE, $affectedFields, array ($this::DB_TABLE_PK=>$id));
 		}
 
